@@ -40,30 +40,4 @@ public class ManuallySink {
         acknowledgment.acknowledge();
     }
 
-//    @StreamListener(MultiOutputSource.SAMPLE_TWO)
-//    public synchronized void receive2(Message<?> message) {
-//        Acknowledgment acknowledgment = message.getHeaders().get(KafkaHeaders.ACKNOWLEDGMENT, Acknowledgment.class);
-//        if (acknowledgment == null) {
-//            logger.info("acknowledgment is null");
-//            return;
-//        }
-//        logger.info("acknowledge be invoked");
-//        acknowledgment.acknowledge();
-//
-//        logger.info("Received message : {}", message.getPayload().toString());
-//    }
-
-    public interface MultiInputSink {
-
-        String SAMPLE_ONE = "sample-one";
-
-        String SAMPLE_TWO = "sample-two";
-
-        @Input(SAMPLE_ONE)
-        SubscribableChannel sampleOne();
-
-        @Input(SAMPLE_TWO)
-        SubscribableChannel sampleTwo();
-    }
-
 }
