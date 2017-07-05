@@ -1,4 +1,4 @@
-package com.watent.sink;
+package com.watent.task;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Sink;
-import org.springframework.integration.annotation.ServiceActivator;
 
 @SpringBootApplication
 @EnableBinding(Sink.class)

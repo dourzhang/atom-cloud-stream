@@ -1,4 +1,4 @@
-package com.watent.sink.moudel;
+package com.watent.task.moudel;
 
 import lombok.Data;
 

@@ -1,7 +1,6 @@
-package com.watent.sink.infrastructure;
+package com.watent.task.infrastructure;
 
-import com.watent.sink.moudel.Foo;
-import org.springframework.cloud.stream.annotation.EnableBinding;
+import com.watent.task.moudel.Foo;
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.SubscribableChannel;

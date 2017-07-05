@@ -1,16 +1,14 @@
-package com.watent.sink.infrastructure;
+package com.watent.task.infrastructure;
 
-import com.watent.sink.moudel.EntityOne;
+import com.watent.task.moudel.EntityOne;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.Message;
-import org.springframework.messaging.SubscribableChannel;
 
 /**
  * Setting autoCommitOffset false and relying on manual acking.
